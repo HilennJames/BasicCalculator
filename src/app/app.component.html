@@ -21,29 +21,20 @@
 
           <div>
               <button 
-              name="add"
-              #add="ngModel" 
+              (click)="btnClicked($event);"
               type="button"
-              (click)="btnClicked(add);"
-              ngModel>
+              >
               &#43;
               </button>
 
               <button
-              name="subtr" 
-              #subtr="ngModel"
-              type="button"
-              (click)="btnClicked(subtr)"
-              ngModel
-              >&#8722;
-              </button>
+              (click)="btnClicked($event);" 
+              type="button">&#8722;</button>
 
 
               <button 
               name="submitButton " 
-              type="submit">
-              &#61;
-              </button>
+              type="submit">&#61;</button>
           </div>
 
 </form>
