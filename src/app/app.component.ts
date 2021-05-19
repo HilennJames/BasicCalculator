@@ -41,7 +41,6 @@ export class AppComponent {
     /******************************************* */
     reset(form: NgForm): void {
       this.result = '';
-      this.values = {};
       form.resetForm();
     }
     /**************************************** */
@@ -58,7 +57,6 @@ export class AppComponent {
     /*********************************** */
     // Result is assigned  to app component
     finalAns(result: any): number {
-      console.log(result);
       return  this.result = result.message;
     }
 
